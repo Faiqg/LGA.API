@@ -1,0 +1,1 @@
+Proposed API as a layer between data and presentation. WIP
