@@ -25,4 +25,8 @@ jobs:
       run: dotnet test --no-build --verbosity normal
     - name: Publish
       run: dotnet publish
-      
+    - name: Upload Build Artifact
+      uses: actions/upload-artifact@v2.2.1
+      with:
+        name: my-artifact
+        path: /home/runner/work/LGA.API/LGA.API/LGA.API/bin/Debug/netcoreapp3.1/publish/
